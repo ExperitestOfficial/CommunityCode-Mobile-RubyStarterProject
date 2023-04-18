@@ -1,25 +1,21 @@
-# CommunityCode-Mobile-RubyStarterProject
-Start Writing tests with Continuous Testing Cloud and Ruby
-## Cloning The Sample Project
+# Community Code - Mobile Ruby Starter Project
+Use this project to get started writing tests with Continuous Testing Cloud using Ruby.
 
-Clone the sample project from [CommunityCode-Mobile-RubyStarterProject](https://github.com/ExperitestOfficial/CommunityCode-Mobile-RubyStarterProject) repository and navigate to the code directory as shown below:
+
+1. Clone the sample project from [CommunityCode-Mobile-RubyStarterProject](https://github.com/ExperitestOfficial/CommunityCode-Mobile-RubyStarterProject) repository and navigate to the code directory as shown below:
 
 ```bash
 git clone https://github.com/ExperitestOfficial/CommunityCode-Mobile-RubyStarterProject
 cd CommunityCode-Mobile-RubyStarterProject
 ```
-
-
-## Setting Up Authentication
-
-To set up authentication, update the following parameters in [config.yml](config.yml):
-* url - Url for the cloud the test would run in. For example, https://company.experitest.com/
-* accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.experitest.com/pages/viewpage.action?pageId=52593435) to learn how to obtain an access key.
+2. Set up authentication. Update the following parameters in [config.yml](config.yml):
+* url - URL for the cloud the test runs on. For example, https://company.experitest.com/
+* accessKey -  Personal authentication key. To learn how to obtain a key, see [Obtaining Access Key](https://docs.experitest.com/pages/viewpage.action?pageId=52593435).
 
 ## Running Tests
-This project requires Ruby: 2.7+
+This project requires Ruby 2.7 and higher.
 
-If this is the first time running the tests, set up dependencies with
+If this is the first time running the tests, set up the dependencies.
 ```bash
 gem install appium_lib -v 11.2.0
 ```
@@ -33,8 +29,8 @@ ruby -Itest test/run_tests.rb
 
 The example tests in this project use a demo application.
 To upload your own application to cloud:
-1. Log in to the cloud using a browser.
-2. In the left menu click Applications.
+1. Log in to Continous Testing Cloud using a browser.
+2. Click Applications.
 3. Click Upload.
 4. Click the application file to upload.
 
@@ -51,7 +47,7 @@ appActivity: '.LoginActivity',
 app: 'cloud:com.experitest.ExperiBank',
 bundleId: 'com.experitest.ExperiBank',
 ```
-for more ways to upload your application to the cloud, [see here](https://docs.experitest.com/display/TE/Native+Applications+Testing).
+For more ways to upload your application to the cloud, see [Native Applications Testing](https://docs.experitest.com/display/TE/Native+Applications+Testing).
 
 ## Desired Capabilities
 
