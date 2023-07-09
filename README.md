@@ -27,7 +27,7 @@ ruby -Itest test/run_tests.rb
 
 ## Upload Application to the Cloud
 
-The example tests in this project use a demo application.
+The example tests in native_demo use a demo application.
 To upload your own application to cloud:
 1. Log in to Continous Testing Cloud using a browser.
 2. Click Applications.
